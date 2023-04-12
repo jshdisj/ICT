@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess Game</title>
+    <script src="chess.js"></script>
+    <style>
+      canvas {
+        border: 1px solid #999;
+      }
+    </style>
+  </head>
+  <body onload="init()">
+    <canvas id="chessboard" width="400" height="400" onclick="handleClick(event)"></canvas>
+    <p id="status"></p>
+  </body>
+</html>

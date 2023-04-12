@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book now</title>
+
+        <link rel="stylesheet" href="../CSS/delicacies.css">
+</head>
+<body>
+
+    <script>
+// Password
+function passwordReveal(){
+    var x = document.getElementById("passwordInput");
+    if (x.type === "password"){
+        x.type = "text";
+    } else {
+        x.type = "password"
+    }
+}
+
+
+//buttonClick
+
+function redirect() {
+    document.location.href = "landing.html";
+}
+
+
+
+
+</script>
+<!-- Nav Bar -->
+<header>
+    <div>
+        <h1 style="text-decoration: none;">Group 11</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Main_Index.html">Home</a></li>
+            <li><a href="BookNow.html">Register</a></li>
+            <li><a href="AboutOurGroup.html">About our group</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <div id = "form">
+        <form  id = "remove">
+            <div id = "formBoxes">
+            <!--Organize-->
+<center>
+                <h1>Sign Up</h1>
+            <h4>First Name:<input type = "text" id = "firstName" name = "firstName">
+           <h4>Last Name: <input type = "text" id = "lastName" name = "lastName">
+            <h4>Email: <input type = "email" id="email" name="email">
+            <h4>Password: <input type = "password" value="something" id = "passwordInput">
+
+            <input type = "checkbox" onclick="passwordReveal()">Show Password
+            <br>
+            <br>
+            <div id = "submit">
+                <center>
+                <button type = "button" id = "mainSign" onclick="redirect()">Sign Up!</button>
+                <h3 id = "optionSign">Or Sign up using:</h3>
+                <button id = "signUpFacebook" type = "button" onclick="redirect()"><img src = "../IMG/Fb.png"></button>
+                <button id = "signUpGoogle" type = "button" onclick="redirect()"><img src = "../IMG/Colorful-google-logo-design-on-transparent-PNG-1.png"></button>
+                <button id = "signUpGithub" type = "button" onclick="redirect()"><img src = "../IMG/GitHub-Mark.png"></button>
+                <br>
+
+                </center>
+            </div>
+        </div>
+        </form>
+
+
+
+        <footer>
+            <div class="footer-container">
+              <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum rem laudantium quam, quasi ullam soluta?</p>
+              </div>
+              <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Example street<br>Example City, 69420<br>Phone: (555) 555-5555<br>Email: Group11.tshs@gmai.com</p>
+              </div>
+              <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="social-links">
+                    <p>DSWD: 0918 912 2813<br> NDRRMC: 02 8911 5061<br>National Emergency Hotline: 911<br>Philippine Red Cross: 143<br>PNP Hotline: 117</p>
+                </ul>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booking Form</title>
+        <link rel="stylesheet" href="../CSS/book.css">
+</head>
+<body>
+
+<header>
+    <div>
+        <h1 style="text-decoration: none;">Group 11</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Main_Index.html">Home</a></li>
+            <li><a href="BookNow.html">Register</a></li>
+            <li><a href="AboutOurGroup.html">About our group</a></li>
+        </ul>
+    </nav>
+</header>
+
+    
+</head>
+
+</header>
+<div class="showcase">
+	<h1>Welcome to Hotel By The Lake</h1>
+	<p>A luxurious hotel with top-class amenities and services</p>
+	<a href="#booking-form" class="button">Book Now</a>
+</div>
+
+<section class="rooms">
+	<h2>Our Rooms</h2>
+	<p>We offer a variety of comfortable and well-equipped rooms to meet your needs.</p>
+	<div class="room-list">
+		<div class="room">
+			<img src="../IMG/2Star.webp" alt="Room 1">
+			<h3>Standard Room</h3>
+			<p>Starting from 1000 PHP per night</p>
+			<p>Double room</p>
+			<a href="#booking-form" class="button">Book Now</a>
+		</div>
+		<div class="room">
+			<img src="../IMG/3Star.jpg" alt="Room 2">
+			<h3>Deluxe Room</h3>
+			<p>Starting from 1250 PHP per night</p>
+			<p>Double Room</p>
+			<a href="#booking-form" class="button">Book Now</a>
+		</div>
+		<div class="room">
+			<img src="../IMG/4Star.jpg" alt="Room 3">
+			<h3>Executive Room</h3>
+			<p>Starting from 1500 PHP per night</p>
+			<p>Triple Room</p>
+			<a href="#booking-form" class="button">Book Now</a>
+		</div>
+	</div>
+
+	<div class="room-list">
+		<div class="room">
+			<h3>Package #1</h3>
+			<h3>Price: 3000 PHP</h3>
+			<p>Free Shuttle<br>
+			Free tour on selected places<br>
+			<p>Destinations<br>-Mount Makiling<br>Enchanted Kingdom</p>
+			Upgraded hotel</p>
+			<a href="#booking-form" class="button">Book Now</a>
+		</div>
+		<div class="room">
+			<h3>Package #2</h3>
+			<h3>Price: 4000 PHP</h3>
+			<p>Everything mentioned in package 1<br>
+			Free access to swimming pools<br>
+			Free pass on selected locations</p>
+			<p>Destinations<br>-Mount Makiling<br>Enchanted Kingdom<br>Hulugan Falls</p>
+			<a href="#booking-form" class="button">Book Now</a>
+		</div>
+		<div class="room">
+			<h3>Package #3</h3>
+			<h3>Price: 5000 PHP</h3>
+			<p>Everything mentioned in package 2<br>
+			Partial VIP access<br>
+			<p>Destinations<br>-Mount Makiling<br>Enchanted Kingdom<br>Hulugan Falls<br>Seven Lakes of San Pablo</p>
+			<a href="#booking-form" class="button">Book Now</a>
+		</div>
+	</div>
+</section>
+
+
+
+
+<body>
+	<center>
+	<button id="modalBtn" class="button">Book Now!</button>
+</center>
+	<div id="myModal" class="modal">
+	  <div class="modal-content">
+		<span class="close">&times;</span>
+		<h2 style="color: white;">Checkout Form</h2>
+		<form id="checkoutForm" action="thankYou.html">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Your name.." required>
+	
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Your email.." required>
+	
+			<label for="phone">Booking Date</label>
+			<input type="text" id="phone" name="phone" placeholder="Booking Date" required>
+
+			<label for="Credit Card">Credit Card</label>
+			<input type="number" id="Credit Card" name="Credit Card" placeholder="Credit" required>
+	
+			<label for="location">Hotel</label>
+			<select id="location" name="location" required>
+				<option value="" data-price="0">Select Hotel</option>
+				<option value="Los Banos" data-price="1000">Standard Room - 1000php per night</option>
+				<option value="Santa Rosa" data-price="1250">Deluxe Room - 1250php per night</option>
+				<option value="San Pablo" data-price="1500">Executive Room - 1500php per night</option>
+			</select>
+	
+			<label for="packages">Package</label>
+			<select id="packages" name="packages">
+				<option value="" data-price="0">Select Package</option>
+				<option value="promo1" data-price="3000">Package 1 - 3000php per night</option>
+				<option value="promo2" data-price="4000">Package 2 - 4000php per night</option>
+				<option value="promo3" data-price="5000">Package 3 - 5000php per night</option>
+			</select>
+	
+			<select id="people" name="people">
+				<option value="" data-price="0">Number of people</option>
+				<option value="promo1" data-price="2">2 person/s</option>
+				<option value="promo2" data-price="3">3 person/s</option>
+				<option value="promo2" data-price="4">4 person/s</option>
+				<option value="promo2" data-price="5">5 person/s</option>
+				<option value="promo3" data-price="6">6 person/s</option>
+				<option value="promo2" data-price="7">7 person/s</option>
+				<option value="promo2" data-price="8">8 person/s</option>
+			</select>
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Write your message here.." required></textarea>
+
+
+		<div id = "modal" class = "modalClass">
+			<div class = "modalContent">
+				<span class = "close">&times;</span>
+				<button type = "button" class = "checkout" onclick="total()">Book Now!</button>
+				<button type = id = "checkoutButton" class = "button">Checkout</button>
+				<p id = 'totalPrice' style="color: white;"></p>
+			</div>
+		</div>
+
+<p id = "totalPrice" style="color: black;"></p>
+
+	  </div>
+	</div>
+	
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum rem laudantium quam, quasi ullam soluta?</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>123 Example street<br>Example City, 69420<br>Phone: (555) 555-5555<br>Email: Group11.tshs@gmail.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul class="social-links">
+			<p>DSWD: 0918 912 2813<br> NDRRMC: 02 8911 5061<br>National Emergency Hotline: 911<br>Philippine Red Cross: 143<br>PNP Hotline: 117</p>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+	//solve
+	function total(){
+		var selectLocation = document.getElementById("location");
+		var selectPackage = document.getElementById("packages");
+		var selectPeople = document.getElementById("people");
+
+		var selectedLocationPrice = parseFloat(selectLocation.options[selectLocation.selectedIndex].getAttribute("data-price"));
+		var selectedPackagePrice = parseFloat(selectPackage.options[selectPackage.selectedIndex].getAttribute("data-price"));
+		var selectedPeopleNumber = parseFloat(selectPeople.options[selectPeople.selectedIndex].getAttribute("data-price"));
+
+		var result = (selectedLocationPrice + selectedPackagePrice) * selectedPeopleNumber;
+
+		document.getElementById("totalPrice").innerHTML = result + " PHP";
+		document.getElementById("totalPrice").style.color = "black";
+		document.getElementById("checkout").style.display = "block";
+	}
+
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("modalBtn");
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+var form = document.getElementById("checkoutForm");
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+  window.location.href = "thankYou.html";
+});
+
+var checkoutButton = document.getElementById("checkoutButton");
+checkoutButton.addEventListener("click", function(e) {
+  e.preventDefault();
+  window.location.href = "thankYou.html";
+});
+
+
+  </script>
+</body>
+</html>

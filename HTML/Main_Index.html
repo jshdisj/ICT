@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laguna</title>
+
+    <link rel = "stylesheet" href="../CSS/style.css">
+
+    <!-- Nav Bar -->
+    <header>
+        <div>
+            <h1 style="text-decoration: none;"><a style="text-decoration: none; color: white;" >Group 11</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Main_Index.html">Home</a></li>
+                <li><a href="BookNow copy.html">Register</a></li>
+                <li><a href="AboutOurGroup.html">About our group</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</head>
+
+<!-- Body -->
+<body>
+
+    <script>
+
+let keysPressed = {
+  t: false,
+  h: false,
+  e: false,
+
+  q: false,
+  u: false,
+  i: false,
+  c: false,
+  k: false,
+
+b: false,
+r: false,
+o: false,
+w: false,
+n: false,
+
+f: false,
+o: false,
+x: false,
+
+j: false,
+u: false,
+m: false,
+p: false,
+s: false,
+
+o: false,
+v: false,
+e: false,
+r: false, 
+
+t: false,
+h: false,
+e: false,
+
+l: false,
+a: false,
+z: false,
+y: false,
+
+d: false,
+o: false,
+g: false
+};
+
+document.addEventListener("keydown", function(event) {
+  const key = event.key.toLowerCase();
+  if (key in keysPressed) {
+    keysPressed[key] = true;
+    if (Object.values(keysPressed).every(function(val) { return val; })) {
+      window.location.href = "panel.html";
+    }
+  } else {
+    // reset keysPressed object if any other key is pressed
+    keysPressed = {
+  t: false,
+  h: false,
+  e: false,
+
+  q: false,
+  u: false,
+  i: false,
+  c: false,
+  k: false,
+
+b: false,
+r: false,
+o: false,
+w: false,
+n: false,
+
+f: false,
+o: false,
+x: false,
+
+j: false,
+u: false,
+m: false,
+p: false,
+s: false,
+
+o: false,
+v: false,
+e: false,
+r: false, 
+
+t: false,
+h: false,
+e: false,
+
+l: false,
+a: false,
+z: false,
+y: false,
+
+d: false,
+o: false,
+g: false
+    };
+  }
+});
+    </script>
+
+    <!-- Showcase -->
+
+        <!--Content-->
+        <h1 id="titles" style="font-size: 100px;">Laguna</h1>
+            <section class = "titles">
+                
+                <div class="row">
+                    <div class="column">
+                      <img src="../IMG/aaaa.jpg"  style="width:100%">
+                    </div>
+                    <div class="column">
+                      <img src="../IMG/bibingka.PNG" style="width:65%">
+                    </div>
+                    <div class="column">
+                      <img src="../IMG/Laguna.jpg" style="width:100%">
+                    </div>
+                  </div>  <p>
+                   Laguna is a province just southeast of Manila and Laguna de Bay. There are many landmarks and tourist
+                   attractions in Laguna. Jose Rizal Shrine is a reconstruction of the his childhood home. Mount makiling, 
+                   a dormant volcano. The town of Pila has well-preserved Spanish colonial architexture. The nagcarlan Underground 
+                   Cemetary; An underground cemetary that holds 19th-century graves.
+                </p>
+            </section>
+
+
+            <!--Boxes-->
+            <section class = "containers">
+                <div class = "boxes">
+                    <div class = "text">
+                        <!--Book-->
+                        <!--Lagyan pa link si a tag-->
+                        <a href="Laguna.html">
+                            <h3>Laguna</h3>
+                            <p>Here in Laguna, You will find many tourist attractions. </p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "boxes">
+                    <div class = "text">
+                        <!--Travel-->
+                        <!--Lagyan pa link si a tag-->
+                        <a href = "Delicacies.html">
+                            <h3>Delicacies</h3>
+                            <p>Here in Laguna, there are many delicacies. Some of our signature foods are Buko pie and Espasol</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "boxes">
+                    <div class = "text">
+                        <!--About-->
+                        <!--Lagyan pa link si a tag-->
+                        <a href = "EconomicStatus.html">
+                            <h3>Economic Status</h3>
+                            <p>We monitor the inflation rate of Laguna and other statuses about it's economy</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-container">
+                  <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum rem laudantium quam, quasi ullam soluta?</p>
+                  </div>
+                  <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>123 Example Street<br>Example City, 69420<br>Phone: (555) 555-5555<br>Email: Group11.tshs@gmail.com</p>
+                  </div>
+                  <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="social-links">
+                            
+                    </ul>
+                  </div>
+                </div>
+              </footer>
+</body>
+
+</html>
