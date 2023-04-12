@@ -1,0 +1,291 @@
+/* Universal */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(Laguna.jpg) no-repeat;
+    background-size: 2000px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: #9a784f;
+    background: #16280e;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 2rem;
+}
+
+header nav {
+    padding: 1rem 2rem;
+}
+
+    /* header h1 style */
+        header h1 {
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: white;
+        }
+
+        header h1 a{
+            padding: 1rem;
+            margin: 1rem;
+        }   
+
+        header h1 a:visited {
+            color: #f4f4f4;
+        }
+
+        header h1 a:hover {
+            background-color:#ffce14;
+            color: black;
+            transition: 250ms ease-in;
+        }
+
+
+    /* header navigation */
+        
+        nav ul li{
+            list-style: none;
+            display: inline;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        nav li a{
+            padding: 1rem;
+            margin: 1rem;
+            text-decoration: none;
+            color: white;
+            transition: all 250ms ease-in;
+        }
+
+        nav li a:hover {
+            background-color: #ffce14;
+            color: black;
+        }
+
+
+        .regform {
+             width: 800px;
+             background-color: rgba(0, 0, 0, 0.8);
+             margin: auto;
+             color: white;
+             padding: 10px 0px 10px 0px;
+             text-align: center;
+             border-radius: 15px 15px 0px 0px;
+             margin-top: 4rem;;
+        }
+
+        .main {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        #name {
+            width: 100%;
+            height: 100px;
+        }
+
+        .name {
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .firstname {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .lastname {
+            position: relative;
+            left: 417px;
+            top: -80px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .firstlabel {
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 203px;
+            top: -45px;
+        }
+
+        .lastlabel {
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 175px;
+            top: -45px;
+        }
+
+        .company {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 490px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .email {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 490px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .code {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 95px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .number {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 255px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .area-code{
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 1rem;
+            left: 105px;
+            top: -4px;
+        }
+
+        .phone-number {
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 1rem;
+            left: -50px;
+            top: -2px;
+        }
+
+        .option {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 532px;
+            height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 1rem;
+            color: #555;
+            outline: none;
+            overflow: hidden;
+        }
+
+        .option option {
+            font-size: 20px;
+        }
+
+        #student {
+            margin-left: 25px;
+            color: white;
+            font-size: 18px;            
+        }
+
+        .radio {
+            display: inline-block;
+            padding-right: 70px;
+            font-size: 25px;
+            margin-left: 25px;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .radio input {
+             width: 20px;
+             height: 20px;
+             border-radius: 50%;
+             cursor: pointer;
+             outline: none;
+        }
+
+        button {
+            background-color: #3baf9f;
+            display: block;
+            margin: 20px 0px 0px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #366473;
+            padding: 14px 110px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            transition: 50ms;
+        }
+
+        button:hover {
+            background-color: rgba(59, 175, 159, 0.7 )
+            
+        }
